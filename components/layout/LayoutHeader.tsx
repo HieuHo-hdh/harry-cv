@@ -7,7 +7,7 @@ import DarkModeToggle from "../common/DarkModeToggle";
 
 const LayoutHeader = () => {
   return (
-    <header className="sticky top-0 border-b bg-accent z-10">
+    <header className="sticky top-0 border-b bg-background/80 backdrop-blur-md z-10">
       <nav className="container mx-auto flex flex-row items-center justify-between px-4 h-14">
         <h1 className="text-2xl font-extrabold">
           Harry
