@@ -10,7 +10,7 @@ const DarkModeToggle = () => {
   }
   return (
     <Button variant="default" size="icon" className="cursor-pointer" onClick={handleToggleTheme}>
-      {theme === 'white' ? <Sun /> : <Moon />}
+      {theme === 'dark' ? <Moon /> : <Sun /> }
     </Button>
   )
 }
