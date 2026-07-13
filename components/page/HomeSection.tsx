@@ -25,7 +25,7 @@ const HomeSection = () => {
 
         <FadeIn delay={150}>
           <p className="text-sm sm:text-lg text-muted-foreground max-w-xl">
-            3.5+ years building modern web applications.
+            4 years building modern web applications.
             Passionate about solving real problems and continuously learning through hands-on development.
           </p>
         </FadeIn>

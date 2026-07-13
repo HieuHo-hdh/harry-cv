@@ -41,7 +41,7 @@ const AboutSection = () => {
 
           {/* Short description */}
           <p className="text-muted-foreground leading-relaxed">
-            I'm a Software Engineer based in Ho Chi Minh City with 3.5+ years of experience building modern web applications.
+            I'm a Software Engineer based in Ho Chi Minh City with 4 years of experience building modern web applications.
             I specialise in front-end development with a strong focus on clean UI, performance, and developer experience.
             I enjoy working in collaborative teams, taking ownership of features end-to-end, and continuously learning new technologies.
           </p>
