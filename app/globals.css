@@ -60,8 +60,8 @@
   --popover-foreground: oklch(0.145 0 0);
   /* --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0); */
-  --primary: oklch(76.5% 0.177 163.223);
-  --primary-foreground: oklch(18% 0.02 163.223);
+  --primary: oklch(65% 0.22 38);
+  --primary-foreground: oklch(100% 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
@@ -96,8 +96,8 @@
   --popover-foreground: oklch(0.985 0 0);
   /* --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.205 0 0); */
-  --primary: oklch(55% 0.16 163.223);
-  --primary-foreground: oklch(96% 0.01 163.223);
+  --primary: oklch(65% 0.22 38);
+  --primary-foreground: oklch(100% 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
@@ -107,7 +107,7 @@
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --ring: oklch(65% 0.22 38 / 60%);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -128,21 +128,46 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background-color: var(--background);
+    background-image: radial-gradient(
+      ellipse 80% 60% at 50% -10%,
+      oklch(65% 0.22 38 / 12%) 0%,
+      transparent 70%
+    );
+    background-attachment: fixed;
+  }
+  html.dark body {
+    background-image: radial-gradient(
+      ellipse 80% 60% at 50% -10%,
+      oklch(65% 0.22 38 / 18%) 0%,
+      transparent 70%
+    );
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1000px) {
   .container {
-    max-width: 1400px
+    max-width: 1000px;
   }
 }
 
-html {
-  scroll-behavior: smooth;
+
+@keyframes float {
+  from { transform: translateY(0px) rotate(0deg); }
+  to   { transform: translateY(-18px) rotate(8deg); }
 }
 
 /* Custom classes */
+.section-heading {
+  display: inline;
+  background: linear-gradient(90deg, var(--foreground) 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 .hover-underline {
   position: relative;
 }

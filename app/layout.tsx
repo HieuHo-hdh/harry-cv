@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ho Dac Hieu | Software Engineer",
+  title: "Ho Dac Hieu (Harry) | Software Engineer | Front-end Engineer",
 };
 
 export default function RootLayout({
