@@ -1,11 +1,15 @@
+// "use client";
+
 import { GroupAllSkills } from "@/constants/skill.constants";
 import FadeIn from "@/components/common/FadeIn";
 
 const SkillSection = () => {
   return (
-    <section id="skills" className="px-4 mx-auto pt-16 -mt-8">
+    <section id="skills" className="px-4 mx-auto scroll-mt-4">
       <FadeIn>
-        <h2 className="text-2xl font-bold mb-8 pb-4 border-b border-border">Skills</h2>
+        <h2 className="text-2xl font-bold mb-8 pb-4 border-b border-border">
+          <span className="section-heading">Skills</span>
+        </h2>
       </FadeIn>
       <div className="flex flex-col gap-6">
         {GroupAllSkills.map((group, index) => (
@@ -20,7 +24,9 @@ const SkillSection = () => {
                     key={skill.label}
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-full bg-secondary text-secondary-foreground border border-border transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 hover:border-primary/40 cursor-default select-none"
                   >
-                    {skill.icon}
+                    <span className="shrink-0 w-4 h-4 inline-flex items-center justify-center">
+                      {skill.icon}
+                    </span>
                     {skill.label}
                   </span>
                 ))}

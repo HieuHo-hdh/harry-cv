@@ -7,7 +7,7 @@ const   ScrollTopButton = () => {
     window.scrollTo({ top: 0, behavior: 'smooth'})
   }
   return (
-    <Button variant='default' size='icon' className='cursor-pointer' onClick={() => handleScrollToTop()}>
+    <Button variant='default' size='icon' className='cursor-pointer' aria-label="Scroll to top" onClick={handleScrollToTop}>
       <ArrowUp />
     </Button>
   )

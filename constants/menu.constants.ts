@@ -11,6 +11,11 @@ export const menuItems: MenuItem[] = [
     path: '/#home',
   },
   {
+    key: 'about',
+    title: 'About',
+    path: '/#about',
+  },
+  {
     key: 'skills',
     title: 'Skills',
     path: '/#skills',
@@ -25,9 +30,14 @@ export const menuItems: MenuItem[] = [
   //   title: 'Projects',
   //   path: '/#projects',
   // },
+  // {
+  //   key: 'education',
+  //   title: 'Education',
+  //   path: '/#education',
+  // },
   {
-    key: 'education',
-    title: 'Education',
-    path: '/#education',
-  }
+    key: 'contact',
+    title: 'Contact',
+    path: '/#contact',
+  },
 ]

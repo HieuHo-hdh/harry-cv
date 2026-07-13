@@ -2,9 +2,11 @@ import FadeIn from "@/components/common/FadeIn";
 
 const EducationSection = () => {
   return (
-    <section id="education" className="px-4 mx-auto pt-16 -mt-8 mb-16">
+    <section id="education" className="px-4 mx-auto scroll-mt-4">
       <FadeIn>
-        <h2 className="text-2xl font-bold mb-8 pb-4 border-b border-border">Education</h2>
+        <h2 className="text-2xl font-bold mb-8 pb-4 border-b border-border">
+          <span className="section-heading">Education</span>
+        </h2>
       </FadeIn>
       <FadeIn delay={100}>
         <div className="bg-card border border-border rounded-xl p-4 space-y-1">
