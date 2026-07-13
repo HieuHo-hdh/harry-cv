@@ -1,5 +1,5 @@
 ## About Me
-- A Software Engineer with 3.5+ years of experience.
+- A Software Engineer with 4 years of experience.
 - Focus on building modern web applications.
 - Passionate about solving real problems and continuously learning through hands-on development.
 
