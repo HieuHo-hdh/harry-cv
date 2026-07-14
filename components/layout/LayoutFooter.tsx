@@ -1,16 +1,14 @@
 import Link from "next/link";
-import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, MapPin, Send } from "lucide-react";
 import { menuItems } from "@/constants/menu.constants";
 import ScrollTopButton from "./ScrollTopButton";
 
 const contacts = [
-  { icon: Mail,  label: "Email", href: "mailto:hdh13300@gmail.com", value: "hdh13300@gmail.com" },
-  { icon: Phone, label: "Phone", href: "tel:+84902233257",          value: "+84902233257" },
-];
-
-const socials = [
-  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/hieu-ho-hdh13300" },
-  { icon: Github,   label: "GitHub",   href: "https://github.com/HieuHo-hdh" },
+  { icon: Mail,     label: "Email",    href: "mailto:hdh13300@gmail.com",                    value: "hdh13300@gmail.com" },
+  { icon: Phone,    label: "Phone",    href: "tel:+84902233257",                             value: "+84902233257" },
+  { icon: Send,     label: "Telegram", href: "https://t.me/hdh13300",                        value: "@hdh13300" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/hieu-ho-hdh13300", value: "hieu-ho-hdh13300" },
+  { icon: Github,   label: "GitHub",   href: "https://github.com/HieuHo-hdh",               value: "HieuHo-hdh" },
 ];
 
 const LayoutFooter = () => {
@@ -18,7 +16,7 @@ const LayoutFooter = () => {
     <footer className="border-t bg-muted/60 backdrop-blur-md">
       <div className="container mx-auto px-4 py-10">
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
 
           {/* Col 1: brand + meta */}
           <div className="space-y-3">
@@ -52,7 +50,7 @@ const LayoutFooter = () => {
             </ul>
           </div>
 
-          {/* Col 3: contact */}
+          {/* Col 3: contact + socials */}
           <div className="space-y-3">
             <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Contact</p>
             <ul className="space-y-2">
@@ -60,30 +58,12 @@ const LayoutFooter = () => {
                 <li key={label}>
                   <a
                     href={href}
+                    target={href.startsWith("http") ? "_blank" : undefined}
+                    rel="noopener noreferrer"
                     className="inline-flex items-start gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
                   >
                     <Icon size={14} className="mt-0.5 shrink-0" />
                     <span className="break-all">{value}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Col 4: social links */}
-          <div className="space-y-3">
-            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Connect</p>
-            <ul className="space-y-2">
-              {socials.map(({ icon: Icon, label, href }) => (
-                <li key={label}>
-                  <a
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
-                  >
-                    <Icon size={14} />
-                    {label}
                   </a>
                 </li>
               ))}
