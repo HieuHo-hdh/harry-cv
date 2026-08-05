@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -124,6 +123,9 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   * {
     @apply border-border outline-ring/50;
   }
@@ -161,7 +163,7 @@
 /* Custom classes */
 .section-heading {
   display: inline;
-  background: linear-gradient(90deg, var(--foreground) 0%, var(--primary) 100%);
+  background: linear-gradient(-90deg, var(--foreground) 0%, var(--primary) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

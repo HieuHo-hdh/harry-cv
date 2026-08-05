@@ -24,6 +24,7 @@ const FloatingNav = () => {
               key={item.key}
               href={item.path}
               className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-full text-sm font-medium text-muted-foreground transition-all duration-200 hover:bg-primary hover:text-primary-foreground"
+              aria-label={item.title}
             >
               <Icon size={16} className="sm:w-[18px] sm:h-[18px]" />
               <span className="hidden sm:inline">{item.title}</span>

@@ -6,11 +6,13 @@ import { ThemeProvider } from "@/components/theme-provider";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap"
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap"
 });
 
 export const metadata: Metadata = {
@@ -28,8 +30,8 @@ export default function RootLayout({
         <meta name="author" content="Ho Dac Hieu" />
         <meta name="keywords" content="Software Engineer, Frontend Engineer" />
         <meta
-          name="description" 
-          content="Ho Dac Hieu (Harry) - Software Engineer, Frontend Engineer. 4+ years of experience building modern web applications." 
+          name="description"
+          content="Ho Dac Hieu (Harry) - Software Engineer, Frontend Engineer. 4+ years of experience building modern web applications."
         />
       </head>
       <body

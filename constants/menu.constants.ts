@@ -25,16 +25,6 @@ export const menuItems: MenuItem[] = [
     title: 'Experience',
     path: '/#experience',
   },
-  // {
-  //   key: 'projects',
-  //   title: 'Projects',
-  //   path: '/#projects',
-  // },
-  // {
-  //   key: 'education',
-  //   title: 'Education',
-  //   path: '/#education',
-  // },
   {
     key: 'contact',
     title: 'Contact',
