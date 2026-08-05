@@ -24,6 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="author" content="Ho Dac Hieu" />
+        <meta name="keywords" content="Software Engineer, Frontend Engineer" />
+        <meta
+          name="description" 
+          content="Ho Dac Hieu (Harry) - Software Engineer, Frontend Engineer. 4+ years of experience building modern web applications." 
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-w-[320px]`}
       >

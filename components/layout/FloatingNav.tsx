@@ -35,6 +35,7 @@ const FloatingNav = () => {
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-primary text-primary-foreground transition-all duration-200 cursor-pointer"
+          aria-label="dark-mode-toggle"
         >
           <Sun size={18} className="scale-100 dark:scale-0" />
           <Moon size={18} className="absolute scale-0 dark:scale-100" />

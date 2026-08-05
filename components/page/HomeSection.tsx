@@ -14,7 +14,7 @@ const HomeSection = () => {
         <FadeIn>
           <div className="flex items-center gap-3 justify-center mb-2">
             <span className="text-sm font-medium tracking-widest uppercase text-primary">Software Engineer</span>
-            <span className="w-px h-4 bg-primary/40" />
+            <span className="w-px h-4 bg-primary/60" />
             <span className="text-sm font-medium tracking-widest uppercase text-primary">Front-end Engineer</span>
           </div>
           <h1 className="font-extrabold text-4xl md:text-5xl lg:text-7xl leading-tight">
@@ -38,7 +38,7 @@ const HomeSection = () => {
             <Button asChild size="lg" variant="outline" className="rounded-full">
               <a href="/#contact">Contact Me</a>
             </Button>
-            <Button asChild size="lg" className="rounded-full">
+            <Button asChild size="lg" variant="outline" className="rounded-full">
               <a href={process.env.CV_URL} target="_blank" rel="noopener noreferrer">
                 <Download /> Download CV
               </a>
