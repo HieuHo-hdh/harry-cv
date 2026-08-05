@@ -35,7 +35,7 @@ const AboutSection = () => {
         {/* Avatar — full width on mobile, fixed width + card height on desktop */}
         <FadeIn delay={200} className="shrink-0 w-full md:w-64">
           <div className="relative w-full aspect-[2/3] md:aspect-auto md:h-full rounded-2xl overflow-hidden border border-border shadow-md">
-            <Image src={process.env.AVATAR_URL!} alt="Harry" fill className="object-cover object-top" />
+            <Image src={process.env.AVATAR_URL!} alt="Harry" fill priority sizes="(max-width: 768px) 100vw, 256px" className="object-cover object-top" />
           </div>
         </FadeIn>
 
