@@ -38,6 +38,7 @@ export default function FlyingIcons() {
   useEffect(() => {
     const W = window.innerWidth;
     const H = window.innerHeight;
+    const isMobile = W < 768;
 
     states.current = ICONS.map((_, i) => ({
       x: rand(0.05, 0.85) * W,
@@ -74,7 +75,16 @@ export default function FlyingIcons() {
       raf.current = requestAnimationFrame(tick);
     };
 
-    raf.current = requestAnimationFrame(tick);
+    if (isMobile) {
+      if (typeof requestIdleCallback !== "undefined") {
+        requestIdleCallback(() => {
+          raf.current = requestAnimationFrame(tick);
+        });
+      }
+    } else {
+      raf.current = requestAnimationFrame(tick);
+    }
+
     return () => cancelAnimationFrame(raf.current);
   }, []);
 
