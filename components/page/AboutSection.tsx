@@ -12,8 +12,6 @@ const info = [
 ]
 
 const AboutSection = () => {
-  const avatar = process.env.AVATAR_URL
-
   return (
     <section id="about" className="px-4 mx-auto scroll-mt-4">
       <FadeIn>
@@ -37,13 +35,7 @@ const AboutSection = () => {
         {/* Avatar — full width on mobile, fixed width + card height on desktop */}
         <FadeIn delay={200} className="shrink-0 w-full md:w-64">
           <div className="relative w-full aspect-[2/3] md:aspect-auto md:h-full rounded-2xl overflow-hidden border border-border shadow-md">
-            {avatar ? (
-              <Image src={avatar} alt="Harry" fill className="object-cover object-top" />
-            ) : (
-              <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <span className="text-7xl font-extrabold text-primary/40 select-none">HH</span>
-              </div>
-            )}
+            <Image src={process.env.AVATAR_URL!} alt="Harry" fill className="object-cover object-top" />
           </div>
         </FadeIn>
 

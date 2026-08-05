@@ -1,7 +1,12 @@
+import dynamic from "next/dynamic"
 import { Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import FadeIn from "@/components/common/FadeIn"
-import FlyingIcons from "@/components/page/FlyingIcons"
+
+const FlyingIcons = dynamic(() => import("@/components/page/FlyingIcons"), {
+  loading: () => null,
+  ssr: true
+})
 
 const HomeSection = () => {
   return (
