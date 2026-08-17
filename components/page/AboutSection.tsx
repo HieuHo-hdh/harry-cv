@@ -23,10 +23,7 @@ const AboutSection = () => {
       {/* Description — full width at top */}
       <FadeIn delay={100}>
         <p className="text-muted-foreground leading-relaxed mb-8">
-          I'm a Software Engineer based in Ho Chi Minh City with 4 years of experience building modern web applications.
-          I specialise in front-end development with a strong focus on clean UI, performance, and developer experience.
-          I enjoy working in collaborative teams, taking ownership of features end-to-end, and continuously learning new technologies.
-        </p>
+          Software Engineer with 4 years of experience building high-quality applications that address real user needs. Motivated by challenging projects and committed to continuously improving my skills through hands-on problem-solving. Continuously exploring AI and applying it to the development process through ongoing learning and practical use.        </p>
       </FadeIn>
 
       {/* Image + Card */}
