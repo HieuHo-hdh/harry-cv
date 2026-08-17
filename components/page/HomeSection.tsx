@@ -38,7 +38,7 @@ const HomeSection = () => {
             <Button asChild size="lg" variant="outline" className="rounded-full">
               <a href="/#contact">Contact Me</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="rounded-full">
+            <Button asChild size="lg" variant="default" className="rounded-full">
               <a href={process.env.CV_URL} target="_blank" rel="noopener noreferrer">
                 <Download /> Download CV
               </a>
