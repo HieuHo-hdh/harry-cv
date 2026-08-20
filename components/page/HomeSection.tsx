@@ -2,6 +2,7 @@ import { Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import FadeIn from "@/components/common/FadeIn"
 import FlyingIcons from "@/components/page/FlyingIcons"
+import Link from "next/link"
 
 const HomeSection = () => {
   return (
@@ -33,10 +34,10 @@ const HomeSection = () => {
         <FadeIn delay={350}>
           <div className="flex flex-wrap gap-3 justify-center">
             <Button asChild size="lg" variant="outline" className="rounded-full">
-              <a href="/#experience">View Experience</a>
+              <Link href="/#experience">View Experience</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="rounded-full">
-              <a href="/#contact">Contact Me</a>
+              <Link href="/#contact">Contact Me</Link>
             </Button>
             <Button asChild size="lg" variant="default" className="rounded-full">
               <a href={process.env.CV_URL} target="_blank" rel="noopener noreferrer">

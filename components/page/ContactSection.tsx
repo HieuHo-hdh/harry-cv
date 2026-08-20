@@ -54,7 +54,7 @@ const ContactSection = () => {
 
       <FadeIn delay={100}>
         <p className="text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-          I'm actively open to new opportunities — whether on-site or hybrid in Ho Chi Minh City, or fully remote.
+          I&apos;m actively open to new opportunities — whether on-site or hybrid in Ho Chi Minh City, or fully remote.
           If you have a role, project, or collaboration in mind, please get in touch through any of the channels below.
         </p>
       </FadeIn>
